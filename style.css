@@ -1,0 +1,43 @@
+body {
+    background-color: slategray;
+}
+
+.navbar {
+    padding: 0px;
+}
+
+.content {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.col-8 {
+    background-color: white;
+}
+.img {
+    float: left;
+    margin: 5px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    border-top: 8px solid #4aaaa5;
+    padding: 10px;
+}
+
+
+@media screen and (max-width: 640px) {
+
+body {
+    background-color: black;
+}
+}
