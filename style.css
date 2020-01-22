@@ -8,16 +8,24 @@ body {
 
 .content {
     margin-top: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 40px !important;
 }
 
-.col-8 {
+.col-md-8 {
     background-color: white;
 }
+
 .img {
     float: left;
     margin: 5px;
 }
+
+.img-port {
+    float: left;
+    margin: 5px;
+    max-width: 150px;
+}
+
 
 .clearfix::after {
     content: "";
@@ -26,7 +34,8 @@ body {
 }
 
 footer{
-    position: relative;
+    position: fixed;
+    left: 0;
     bottom: 0;
     width: 100%;
     text-align: center;
@@ -34,10 +43,43 @@ footer{
     padding: 10px;
 }
 
+.banner {
+    width: 140px;
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    background-color: teal;
+    color: white;
+    text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+
+.img-port {
+    width: 150px;
+}
+.col-md-3 {
+    max-width: 150px;
+}
+}
+
 
 @media screen and (max-width: 640px) {
 
 body {
     background-color: black;
+    margin: 0;
+    
+}
+.banner {
+    margin-right: 2px;
+}
+.col-md-3 {
+    max-width: 100%;
+}
+
+
+..col-md-3 {
+width: 100%;
 }
 }
